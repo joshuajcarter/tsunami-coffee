@@ -1,0 +1,401 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+h1,
+h2{
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+a {
+  color: #fff;
+}
+
+html,
+body {
+  font-family: 'Syne', Helvetica, sans-serif;
+  font-size: 16px; 
+  letter-spacing: 1px; 
+  background-color: #fff;  
+}
+
+header,
+footer,
+.description,
+.rating {
+  width: 100%;  
+}
+
+header {
+  height: 30rem;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  background-image: url(../images/bg-photo-opaque.png);
+
+    /*https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tsunami-coffee*/
+  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+header img {
+  width: 15rem;
+  height: auto;
+  display: block;
+  box-sizing: content-box;
+  padding: 2rem 1rem;
+  border-left: 0;
+  border-right: 0;
+  margin: 4rem auto;
+  margin-top: 4rem;
+}
+
+.main-nav,
+.description,
+footer {
+  background-image: url(../images/outlets.png);
+}
+
+.main-nav {
+  max-width: 100%;
+  background-color: #641016;  
+  color: #fff;
+  padding-top: 1rem;
+}
+
+.main-nav ul,
+.description-content,
+.rating-text,
+.container,
+.location {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  display: flex; 
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+li {
+  padding: 0.75rem 1.25rem;
+}
+
+.description,
+.location {
+  padding: 2.5rem 2rem; 
+}
+
+.description {
+  background-color: #1A0702;
+  padding-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.description-content {
+  color: #fff;
+}
+
+.description-content img {
+  width: 5rem;
+  height: 5rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.description-text {
+  text-align: left;
+}
+
+.description-text h2 {
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+.description-text p {
+  max-width: 30rem;
+  line-height: 1.25;
+  padding-bottom: 1.25rem;
+  margin: 0 auto;
+}
+
+.description-text p a {
+  color: #bed600;
+}
+
+.rating,
+.love-note {  
+  background-color: #ffedbf;
+  color: #641016;
+  padding: 6rem 2rem;
+}
+
+.rating-text {
+  max-width: 8rem;
+  margin: 0 auto;
+}
+
+.rating-text h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  font-style: italic;  
+}
+
+.rating-text p {
+  padding-top: 2rem;
+}
+
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.gallery img {  
+  width: 32%;
+}
+
+.location {
+  margin: 0 auto;
+}
+
+.location-text {
+  text-align: center; 
+  padding-bottom: 1.5rem; 
+  margin: 0 auto;
+}
+
+.location h3 {
+  color: #641016;
+  padding-bottom: .5rem; 
+}
+
+.location p {
+  font-weight: 500;
+}
+
+.mobile-map,
+.map {
+  max-width: 100%;
+  padding-bottom: 1.5rem;
+  margin: 0 auto;
+}
+.map {
+  display: none;
+}
+
+.love-note {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+ }
+
+footer {
+  background-color: #641016;
+}
+
+footer .footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4em 0;
+  color: #fff;
+}
+
+.icon li {
+  margin-right: 1rem;
+} 
+
+.copyright {
+  padding-top: 1.75rem;
+}
+
+
+ /*-----media queries-----*/
+
+
+@media only screen and (max-width: 960px){
+  .main {
+    padding-top: 0;
+  }
+}
+
+@media only screen and (min-width: 890px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 790px) {
+  .description-content {    
+    display: flex;
+    padding: 4rem 0;    
+  }
+  .description-content img {
+    width: 5rem;
+    height: 5rem;
+    margin: 0 2rem;
+  }
+  .description-content h2 {
+    text-align: left;
+  }
+  .description-content p {
+    margin: 0;
+  }
+  .map{
+    display: block;
+    width: 75%;
+    float: right;
+    padding-top: 2rem;
+    padding-right: 1rem;
+  }
+  .mobile-map {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 690px) {
+  .header-nav {
+    max-width: 400px;
+    justify-content: flex-end;
+  }  
+}
+
+@media only screen and (max-width: 690px) {
+  .header-nav {
+    padding: 0 1.5rem;
+  }
+}
+
+ @media only screen and (min-width: 580px) {
+  .love-note {
+    clear: both;
+  }
+}
+
+@media only screen and (min-width: 570px) {
+  .location {
+    padding: 2.5rem 2rem;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .location {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .location-text {
+    float: left;
+    text-align: left;
+    padding-left: .5rem;
+    }
+  .mobile-map{
+    width: 65%;
+    float: right;
+    padding-right: 1rem;
+  }
+  .love-note{
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 470px){
+  .gallery {
+    padding: 0;
+   }
+   .gallery img{
+     width: 100%;
+     margin: 0;
+   }
+   li {
+  padding: 0.75rem 0.75rem;
+  }  
+}
+
+
+@media only screen and (min-width: 320px) {
+ .rating-text {
+  max-width: 400px;
+  } 
+  .rating-text h1 { 
+  padding-left: 3rem;
+  border-left: 1.5px solid;
+  }
+  .rating-text p {
+  padding-left: 3rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  header img {
+    width: 12rem;
+  }
+  .header-nav {
+    padding: 0;
+  }
+  .header-nav li {
+    padding: .5rem .5rem;
+  }
+  .description-content img {
+    width: 4rem;
+    height: 4rem;
+  }
+  .description-text h2 {
+    font-size: 1.5rem;
+  }
+  .rating-text h1,
+  .love-note {
+    font-size: 1.5rem;
+    border: 0;
+    margin: 0 auto;
+  }
+  .rating-text p {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 250px) {
+  ul {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 220px){
+  header img {
+    width: 8rem;
+  }
+}
+
+@media only screen and (max-width: 180px){
+  .description-text h2{
+  font-size: 1rem;
+  font-weight: normal;
+  }
+.rating-text h1{
+    font-size: 1rem;
+  }
+}
+
+/*-----mobile landscape view-----*/
+
+@media only screen and (max-height: 530px) {
+  header img {
+    padding-top: 1rem;
+    margin-top: 0;
+  }
+}
