@@ -168,6 +168,7 @@ li {
 
 .gallery img {  
   width: 32%;
+  height: auto;
 }
 
 .location {
@@ -321,6 +322,7 @@ footer .footer-container {
    }
    .gallery img{
      width: 100%;
+     height: auto;
      margin: 0;
    }
    li {
