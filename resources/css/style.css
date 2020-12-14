@@ -164,11 +164,12 @@ li {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align items: flex-start;
   padding: 1.5rem;
 }
 
 .gallery img {  
-  border: 1px dotted red;
+  border: 1px dotted green;
   width: 32%;
   height: auto;
 }
