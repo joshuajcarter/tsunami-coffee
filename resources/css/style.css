@@ -165,14 +165,14 @@ li {
   flex-wrap: wrap;
   justify-content: space-between;
   align items: flex-start;
-  align-self: flex-start;
   padding: 1.5rem;
 }
 
 .gallery img {  
-  border: 1px dotted red;
+  border: 1px dotted green;
   width: 32%;
   height: auto;
+  align-self: flex-start;
 }
 
 .location {
