@@ -169,7 +169,6 @@ li {
 }
 
 .gallery img {  
-  border: 1px dotted green;
   width: 32%;
   height: auto;
   align-self: flex-start;
